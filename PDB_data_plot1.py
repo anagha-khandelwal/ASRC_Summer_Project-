@@ -1,0 +1,44 @@
+import numpy as np 
+
+import matplotlib.pyplot as plt
+
+
+
+T = [21]
+
+R = [1000]
+
+def rtpairs(r, n):
+      
+    for i in range(len(r)):
+        
+     for j in range(n[i]):
+         
+       yield r[i], j*(2 * np.pi / n[i])
+for r, t in rtpairs(R, T):
+    plt.plot(r * np.cos(t), r * np.sin(t), 'bo', markersize = 25)
+
+plt.text(50, 976,'His', fontSize = 10, color = 'white')
+plt.text(310, 935,'Ile', fontSize = 10, color = 'white')
+plt.text(575, 775,'Leu', fontSize = 10, color = 'white')
+plt.text(770, 560,'Lys', fontSize = 10, color = 'white')
+plt.text(900, 293,'Met', fontSize = 10, color = 'white')
+plt.text(945, 2.3,'Phe', fontSize = 10, color = 'white')
+plt.text(900, -300,'Thr', fontSize = 10, color = 'white')
+plt.text(760, -560,'Trp', fontSize = 10, color = 'white')
+plt.text(565, -790,'Val', fontSize = 10, color = 'white')
+plt.text(306, -930,'Arg', fontSize = 10, color = 'white')
+plt.text(18, -980,'Cys', fontSize = 10, color = 'white')
+plt.text(-281, -971,'Gln', fontSize = 10, color = 'white')
+plt.text(-550, -850,'Gly', fontSize = 10, color = 'white')
+plt.text(-790, -670,'Pro', fontSize = 10, color = 'white')
+plt.text(-960, -425,'Ser', fontSize = 10, color = 'white')
+plt.text(-1050, -150,'Tyr', fontSize = 10, color = 'white')
+plt.text(-1050, 150,'Ala', fontSize = 10, color = 'white')
+plt.text(-950, 435,'Asn', fontSize = 10, color = 'white')
+plt.text(-790, 670,'Asp', fontSize = 10, color = 'white')
+plt.text(-550, 845,'Glu', fontSize = 10, color = 'white')
+plt.text(-280, 960,'Sec', fontSize = 10, color = 'white')
+
+plt.axis('off')
+plt.show()
