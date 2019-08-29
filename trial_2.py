@@ -5,6 +5,7 @@ import datetime
 import os
 import re
 
+# Can you push the output file new_file (C:\Users\khand_ptsvdpp\Downloads\cmder (1)\trial.csv) into the repo so I can take a look at it?
 filename = r"C:\Users\khand_ptsvdpp\Downloads\cmder (1)\2OAU.pdb"
 pdb_lines = open(filename).readlines()
 new_file = r"C:\Users\khand_ptsvdpp\Downloads\cmder (1)\trial.csv" 
